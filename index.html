@@ -1,26 +1,35 @@
-<!---
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RAPIKZ KENAPA NJIR</title>
     <link rel="icon" type="image/x-icon" href="https://i.pinimg.com/736x/0d/71/2a/0d712a0b6805c0b44386339048bdfce5.jpg?format=png&name=900x900">
-    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Menyeting container iframe agar responsif */
+        .iframe-container {
+            position: relative;
+            width: 100%;
+            height: 0;
+            padding-bottom: 56.25%; /* Ini untuk menjaga aspek rasio 16:9 */
+            overflow: hidden;
+        }
+
+        .iframe-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+    </style>
 </head>
-    <body class="font-sans m-0 p-0 bg-gray-200 text-gray-800">
-    <header class="bg-blue-500 text-white p-4 text-center">
-        <h1 class="text-2xl font-bold">UPLOAD FILE BETA BY RAPIKZ</h1>
-    </header>
-    <section id="yayaya" class="p-8 m-4 bg-white rounded-lg">
---->
-    <title>RAPIKZ KENAPA NJIR</title>
-    <link rel="icon" type="image/x-icon" href="https://i.pinimg.com/736x/0d/71/2a/0d712a0b6805c0b44386339048bdfce5.jpg?format=png&name=900x900">
-        <iframe src="https://upload-file-web-by-rapikz.vercel.app/" scrolling="yes"
-            frameborder="0" allowfullscreen></iframe>
-<!---
-    </section>
+<body>
+
+    <div class="iframe-container">
+        <iframe src="https://upload-file-web-by-rapikz.vercel.app/" scrolling="yes" allowfullscreen></iframe>
+    </div>
+
 </body>
 </html>
---->
