@@ -9,18 +9,20 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            min-height: 100vh;
+            height: 100vh; /* Memastikan body mengisi seluruh tinggi viewport */
         }
         iframe {
-            width: 98%; /* iframe mengisi 98% lebar layar */
-            height: 98%; /* iframe mengisi 98% tinggi layar */
-            max-width: 100%; /* Lebar maksimum iframe mengikuti lebar layar */
-            max-height: 100%; /* Tinggi maksimum iframe mengikuti tinggi layar */
-            border: none;
+            width: 80%; /* Lebar iframe 80% dari lebar viewport */
+            height: 80%; /* Tinggi iframe 80% dari tinggi viewport */
+            max-width: 960px; /* Batas lebar maksimum iframe */
+            max-height: 540px; /* Batas tinggi maksimum iframe */
+            scrolling: yes;
+            frameborder: 0;
+            allowfullscreen;
         }
     </style>
 </head>
 <body>
-    <iframe src="https://upload-file-web-by-rapikz.vercel.app/" scrolling="yes" allowfullscreen></iframe>
+    <iframe src="https://upload-file-web-by-rapikz.vercel.app/"></iframe>
 </body>
 </html>
